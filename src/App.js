@@ -3,6 +3,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // , { mode: 'no-cors' }
+  async function apiCall(url) {
+    let response = await fetch(url)
+    console.log(response.status)
+
+    if (response.status === 200) {
+      let data = await response.json()
+      console.log(data)
+      return data
+    }
+  }
+  apiCall('https://jsonplaceholder.typicode.com/todos/1')
+
+
+  fetch('https://jsonplaceholder.typicode.com/todos/10000000')
+    .then(response => response.json())
+    .then(json => console.log(json))
+    .catch((e) => { console.error(e) })
+
+
   return (
     <div className="App">
       <header className="App-header">
