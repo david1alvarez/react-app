@@ -2,8 +2,8 @@
 
 # dependencies
 node_modules/
-auditor-app/node_modules/
-auditor-app/yarn.lock
-auditor-app/package-lock.json
+template-app/node_modules/
+template-app/yarn.lock
+template-app/package-lock.json
 
 .DS_Store
