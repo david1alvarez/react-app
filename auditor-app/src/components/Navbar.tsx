@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react";
+import React, { FC, ReactElement } from 'react'
 import {
   Box,
   Link,
@@ -8,28 +8,28 @@ import {
   MenuItem,
   Toolbar,
   Typography,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import { routes } from "../routes";
-import { NavLink } from "react-router-dom";
+} from '@mui/material'
+import MenuIcon from '@mui/icons-material/Menu'
+import { routes } from '../routes'
+import { NavLink } from 'react-router-dom'
 
 export const Navbar: FC = (): ReactElement => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(null)
 
   const handleOpenNavMenu = (event: any) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    setAnchorElNav(null)
+  }
 
   return (
     <Box
       sx={{
-        width: "100%",
-        height: "auto",
-        backgroundColor: "secondary.main",
+        width: '100%',
+        height: 'auto',
+        backgroundColor: 'secondary.main',
       }}
     >
       <Container maxWidth="xl">
@@ -39,12 +39,12 @@ export const Navbar: FC = (): ReactElement => {
             noWrap
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: 'none', md: 'flex' },
             }}
           >
             Starter App
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -59,18 +59,18 @@ export const Navbar: FC = (): ReactElement => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: 'bottom',
+                horizontal: 'left',
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
+                vertical: 'top',
+                horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: 'block', md: 'none' },
               }}
             >
               {routes.map((page) => (
@@ -93,18 +93,18 @@ export const Navbar: FC = (): ReactElement => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
             React Starter App
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Box
               sx={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                marginLeft: "1rem",
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                alignItems: 'center',
+                marginLeft: '1rem',
               }}
             >
               {routes.map((page) => (
@@ -115,7 +115,7 @@ export const Navbar: FC = (): ReactElement => {
                   color="black"
                   underline="none"
                   variant="button"
-                  sx={{ fontSize: "large", marginLeft: "2rem" }}
+                  sx={{ fontSize: 'large', marginLeft: '2rem' }}
                 >
                   {page.title}
                 </Link>
@@ -125,5 +125,5 @@ export const Navbar: FC = (): ReactElement => {
         </Toolbar>
       </Container>
     </Box>
-  );
-};
+  )
+}

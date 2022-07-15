@@ -1,30 +1,29 @@
-import React from "react";
-import { Box, CssBaseline, ThemeProvider } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { routes as appRoutes } from "./routes";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+import React from 'react'
+import { Box, CssBaseline, ThemeProvider } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { routes as appRoutes } from './routes'
+import { Navbar } from './components/Navbar'
+import { Footer } from './components/Footer'
 
 export const App = () => {
-  
   // define theme
   const theme = createTheme({
     palette: {
       primary: {
-        light: "#63b8ff",
-        main: "#0989e3",
-        dark: "#005db0",
-        contrastText: "#000",
+        light: '#63b8ff',
+        main: '#0989e3',
+        dark: '#005db0',
+        contrastText: '#000',
       },
       secondary: {
-        main: "#4db6ac",
-        light: "#82e9de",
-        dark: "#00867d",
-        contrastText: "#000",
+        main: '#4db6ac',
+        light: '#82e9de',
+        dark: '#00867d',
+        contrastText: '#000',
       },
     },
-  });
+  })
 
   return (
     <ThemeProvider theme={theme}>
@@ -45,5 +44,5 @@ export const App = () => {
         </Router>
       </Box>
     </ThemeProvider>
-  );
+  )
 }
