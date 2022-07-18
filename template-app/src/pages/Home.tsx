@@ -12,7 +12,7 @@ export const Home: FC<any> = (): ReactElement => {
         alignItems: 'center',
       }}
     >
-      <Typography variant="h3">Home</Typography>
+      <Typography variant="h3">Home Page</Typography>
     </Box>
   )
 }

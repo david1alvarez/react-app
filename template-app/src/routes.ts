@@ -1,7 +1,7 @@
 // pages
 import { Home } from './pages/Home'
-import { About } from './pages/About'
-import { Products } from './pages/Products'
+import { Page1 } from './pages/Page1'
+import { Page2 } from './pages/Page2'
 
 // other
 import { FC } from 'react'
@@ -18,23 +18,23 @@ interface Route {
 export const routes: Array<Route> = [
   {
     key: 'home-route',
-    title: 'Home',
+    title: 'Home Page',
     path: '/',
     enabled: true,
     component: Home,
   },
   {
-    key: 'about-route',
-    title: 'About',
-    path: '/about',
+    key: 'page-1-route',
+    title: 'Page 1',
+    path: '/page1',
     enabled: true,
-    component: About,
+    component: Page1,
   },
   {
-    key: 'products-route',
-    title: 'Products',
-    path: '/products',
+    key: 'page-2-route',
+    title: 'Page 2',
+    path: '/page2',
     enabled: true,
-    component: Products,
+    component: Page2,
   },
 ]

@@ -16,12 +16,18 @@ export const Footer: FC = (): ReactElement => {
         <Grid container direction="column" alignItems="center">
           <Grid item xs={12}>
             <Typography color="black" variant="h5">
-              React Starter App
+              Template App
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography color="textSecondary" variant="subtitle1">
-              {`${new Date().getFullYear()} | React | Material UI | React Router`}
+            <Box display="flex" justifyContent="center" alignItems="center">
+              <Typography color="textSecondary" variant="subtitle2">
+                {`${new Date().getFullYear()} | React | Material UI | React Router`}
+              </Typography>
+            </Box>
+            <Typography color="textSecondary" variant="subtitle2">
+              This site has been designed using resources from Flaticon.com |
+              Template icons created by Eucalyp
             </Typography>
           </Grid>
         </Grid>
