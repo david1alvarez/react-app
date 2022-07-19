@@ -5,7 +5,6 @@ node_modules/
 template-app/node_modules/
 template-app/yarn.lock
 template-app/package-lock.json
-template-app/build/**
-!template-app/build/index.html
+template-app/build/
 
 .DS_Store
