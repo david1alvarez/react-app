@@ -9,7 +9,7 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+import { Menu as MenuIcon } from '@mui/icons-material'
 import { routes } from '../routes'
 import { NavLink } from 'react-router-dom'
 
